@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exzzle - The Word Adventure Game</title>
+    <link rel="stylesheet" href="/src/styles/landing.css">
+</head>
+<body>
+    <div id="background-animation"></div>
+    <div class="landing-container">
+        <div class="title-container">
+            <h1 class="game-title">EXZZLE</h1>
+            <p class="subtitle">Embark on a magical word adventure!</p>
+        </div>
+
+        <div class="auth-container">
+            <div class="auth-toggle">
+                <button id="login-toggle" class="toggle-button active">Login</button>
+                <button id="signup-toggle" class="toggle-button">Sign Up</button>
+            </div>
+
+            <div id="login-form" class="form-container">
+                <input type="text" id="login-username" placeholder="Username" class="input-field">
+                <input type="password" id="login-password" placeholder="Password" class="input-field">
+                <button id="login-button" class="auth-button">Login</button>
+            </div>
+
+            <div id="signup-form" class="form-container hidden">
+                <input type="text" id="signup-username" placeholder="Choose Username" class="input-field">
+                <input type="password" id="signup-password" placeholder="Create Password" class="input-field">
+                <input type="password" id="signup-confirm-password" placeholder="Confirm Password" class="input-field">
+                <button id="signup-button" class="auth-button">Sign Up</button>
+            </div>
+        </div>
+
+        <div id="initial-riddle" class="riddle-container hidden">
+            <h2>The Lost City Map</h2>
+            <p class="riddle-text">
+                "In letters five, I help you see,
+                Without me, blind you'd surely be.
+                First in light, last in sight,
+                What word am I, to guide you right?"
+            </p>
+            <input type="text" id="riddle-answer" placeholder="Enter your answer" class="input-field">
+            <button id="submit-riddle" class="riddle-button">Unlock Map</button>
+        </div>
+    </div>
+
+    <div id="root"></div>
+    <script type="module" src="/src/scripts/landing.js"></script>
+</body>
+</html>
